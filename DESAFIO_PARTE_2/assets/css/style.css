@@ -1,0 +1,49 @@
+/* Aplica box-sizing para que padding y border no aumenten el tamaño total */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Fuente limpia y legible */
+}
+
+/* Centra el texto de todo el cuerpo */
+body {
+  text-align: center;
+}
+
+/* Contenedor principal con diseño flexible */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Espacio entre los stickers */
+  margin: 20px 0;
+  flex-wrap: wrap; /* Permite que se acomoden en múltiples líneas en pantallas pequeñas */
+}
+
+/* Estilo de cada bloque de sticker */
+.sticker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Imagen de cada sticker */
+img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain; /* Ajusta la imagen sin deformarla */
+  margin-bottom: 10px;
+}
+
+/* Input para ingresar la cantidad */
+input {
+  width: 50px;
+  text-align: center; /* Centra el número en el input */
+}
+
+/* Botón de verificar */
+button {
+  margin-top: 10px;
+  padding: 5px 15px;
+  cursor: pointer; /* Hace que el puntero cambie al pasar sobre el botón */
+}

@@ -1,0 +1,21 @@
+/* Centrar imagen en la página */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-color: #f0f0f0; /* Color de fondo suave para mejor visibilidad */
+}
+
+/* Imagen */
+#miImagen {
+  cursor: pointer;
+  transition: border 0.3s ease;
+  max-width: 90%; /* Escala la imagen si es muy grande */
+  height: auto;
+}
+
+/* Clase que aplica el borde rojo */
+.borde-rojo {
+  border: 2px solid red;
+}
